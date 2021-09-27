@@ -12,8 +12,9 @@ public class FridayToday {
 
   public int getDay(){
     int day;
+    int h;
 
-    int h = (q +(13*(m+1)/5) + k + (k/4) + (j/4) -2*j)%7;
+    h = (q +(13*(m+1)/5) + k + (k/4) + (j/4) -2*j)%7;
     day = ((h + 5)%7) + 1;
 
     return day;
